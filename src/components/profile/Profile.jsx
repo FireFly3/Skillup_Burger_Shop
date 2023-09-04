@@ -20,9 +20,9 @@ const Profile = () => {
       <main>
         <motion.img src={me} alt="User" {...options} />
         <motion.h5 {...options} transition={{ delay: 0.3 }}>
-          Nelson
+          Nelson <MdDashboard />
         </motion.h5>
-      
+
         <motion.div
           initial={{
             x: "-100vw",
@@ -49,7 +49,7 @@ const Profile = () => {
             delay: 0.3,
           }}
         >
-          Logout
+          <Link to="/login">Logout</Link>
         </motion.button>
       </main>
     </section>

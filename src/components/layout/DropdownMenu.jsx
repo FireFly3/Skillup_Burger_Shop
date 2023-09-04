@@ -7,9 +7,8 @@ function DropdownMenu() {
   useEffect(() => {
     const navs = [
       { name: "Login", path: "/login" },
-      {name:"Orders", path:"/myorders"},
-      {name:"Logout", path:"/login"}
-      
+      { name: "Orders", path: "/myorders" },
+      { name: "Logout", path: "/login" },
     ];
     setNavLinks(navs);
   }, []);
@@ -18,8 +17,8 @@ function DropdownMenu() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container">
-          <a className="navbar-brand" href="#">
-          
+          <a className="navbar-brand" href="htts://google.com">
+            {" "}
           </a>
           <div class="btn-group">
             <button
@@ -35,7 +34,7 @@ function DropdownMenu() {
               {navLinks.map((d, i) => (
                 <li key={i}>
                   <Link to={d.path}>
-                    <button class="dropdown-item" type="button">
+                    <button className="dropdown-item" type="button">
                       {d.name}
                     </button>
                   </Link>
